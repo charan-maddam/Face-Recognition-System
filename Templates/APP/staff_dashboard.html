@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'staff_dashboard.css' %}">
+</head>
+<body>
+    <div class="container d-flex flex-column justify-content-center" style="height: 100vh;">
+        <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <h2>Staff Dashboard</h2>
+            </div> 
+            <div class="col-lg-6">
+                <ul class="dashboard-options">
+                    <li><a href="{% url 'staff_profile'%}" class="btn">Profile</a></li>
+                    <li><a href="{% url 'view_attendence' %}" class="btn">View Attendance</a></li>
+                    <li><a href="{% url 'staff_generate_attendence' %}" class="btn">Generate Attendance Report</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
