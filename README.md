@@ -1,35 +1,29 @@
 # Face Recognition for Student Attendance
 
-This project is a facial recognition system aimed at automating the process of student attendance tracking. It leverages deep learning and computer vision techniques to recognize and verify the identity of students in real-time, thereby improving accuracy and efficiency in attendance management.
-
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [System Architecture](#system-architecture)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Overview
-The Face Recognition for Student Attendance project is designed to automatically record attendance by recognizing students' faces as they enter the classroom. The system uses a pre-trained deep learning model to identify students and log their attendance in a secure database.
+The Face Recognition System (FRS) is designed to automate attendance tracking in schools and universities using facial recognition technology. This system helps teachers and administrators easily manage attendance records, generate reports, and analyze attendance patterns.
 
 ## Features
-- **Automated Attendance Recording**: Recognizes students' faces and records their attendance automatically.
-- **Real-Time Recognition**: Provides instant feedback on student identification.
-- **Database Integration**: Securely stores attendance records in a database.
-- **User-Friendly Interface**: Easy-to-use interface for both administrators and students.
+- **Face Enrollment:** Add student faces to the system.
+- **Attendance Marking:** Automatically record attendance when students' faces are recognized during class.
+- **Student Database Integration:** Works with existing student information systems.
+- **Logging and Reporting:** Keep attendance logs and create various attendance reports.
+- **Analytics and Insights:** Analyze attendance trends and gain insights.
 
 ## Technologies Used
-- **Programming Language**: Python
-- **Libraries**: OpenCV, TensorFlow/Keras, NumPy, Pandas
-- **Database**: MySQL/PostgreSQL
-- **Frontend**: HTML, CSS, JavaScript (for admin panel)
-- **Backend**: Flask/Django (for web-based applications)
+- Python
+- Django
+- OpenCV
+- Pandas
+- face_recognition
+- NumPy
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/face-recognition-attendance.git
-   cd face-recognition-attendance
+## Setup Instructions
+1. Clone the repository: `git clone https://github.com/Chakriixx/Face-Recognition-For-Student-Attendence`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the application: `python manage.py runserver`
+
+## Usage
+1. Open the application in your web browser.
+2. Log in as an administrator, teacher, or student.
+3. Use the features to enroll faces, mark attendance, or generate reports.
